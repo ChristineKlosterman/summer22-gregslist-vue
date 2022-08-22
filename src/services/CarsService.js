@@ -15,11 +15,9 @@ class CarsService {
     AppState.cars = res.data.map(c => new Car(c))
   }
 
-  // Example for making a POST request
   async createCar(carFormData) {
 
     let res = await server.post('api/cars', carFormData)
-    // ALWAYS LOOK AT YOUR RESPONSE
     let car = new Car(res.data)
     AppState.cars = [...AppState.cars, car]
   }

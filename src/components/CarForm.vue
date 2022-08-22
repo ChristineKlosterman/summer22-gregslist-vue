@@ -21,8 +21,8 @@
       <label class="form-label" for="price">Price</label>
       <input class="form-control" type="number" min="1000" id="price" name="price" v-model="editable.price">
 
-      <label class="form-label" for="img">Image</label>
-      <input class="form-control" type="text" id="img" name="img" v-model="editable.img">
+      <label class="form-label" for="imgUrl">Image</label>
+      <input class="form-control" type="text" id="imgUrl" name="imgUrl" v-model="editable.imgUrl">
 
       <label class="form-label" for="description">Description</label>
       <textarea class="w-100 form-control" name="description" id="description" rows="5"

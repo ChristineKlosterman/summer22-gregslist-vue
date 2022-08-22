@@ -1,7 +1,7 @@
 <template>
   <div class="car-page" v-if="car">
     <div class="my-3" :title="car.make">
-      <img class="img-fluid" :src="car.img" alt="">
+      <img class="img-fluid" :src="car.imgUrl" alt="">
       <div class="p-2">
         <h4 class="text-center">{{ car.make }} | {{ car.model }} | {{ car.year }}</h4>
         <p>{{ car.description }}</p>
